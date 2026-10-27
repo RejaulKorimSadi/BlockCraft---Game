@@ -1,0 +1,10 @@
+* text=auto
+*.cpp text eol=lf
+*.h text eol=lf
+*.sh text eol=lf
+*.cbp text eol=crlf
+*.png binary
+*.jpg binary
+*.gif binary
+*.bat text eol=crlf
+*.a binary

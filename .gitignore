@@ -1,0 +1,9 @@
+bin/
+obj/
+build/
+*.o
+*.exe
+*.layout
+*.depend
+world.dat
+screenshot_*.bmp

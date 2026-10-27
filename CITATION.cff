@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use or build on BlockCraft, please cite it like this."
+title: "BlockCraft: a Minecraft-style voxel sandbox in C++ and OpenGL"
+type: software
+version: "1.1"
+date-released: "2026-10-28"
+license: MIT
+authors:
+  - family-names: "Sadi"
+    given-names: "Md Rejaul Korim"
+    affiliation: "Department of Computer Science & Engineering, Metropolitan University, Sylhet"
+keywords:
+  - computer graphics
+  - OpenGL
+  - voxel
+  - procedural generation

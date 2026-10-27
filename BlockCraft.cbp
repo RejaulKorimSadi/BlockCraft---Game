@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="BlockCraft - Md Rejaul Korim Sadi" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/BlockCraft" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="Tests">
+				<Option output="bin/world_test" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/" />
+				<Option object_output="obj/Tests/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++17" />
+			<Add option="-Wall" />
+			<Add directory="deps/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libgcc" />
+			<Add option="-static-libstdc++" />
+			<Add directory="deps/lib" />
+			<Add library="freeglut" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+		</Linker>
+		<ExtraCommands>
+			<Add after="cmd /c if not exist bin\libfreeglut.dll if exist C:\msys64\ucrt64\bin\libfreeglut.dll copy /y C:\msys64\ucrt64\bin\libfreeglut.dll bin\" />
+			<Add after="cmd /c if not exist bin\libgcc_s_seh-1.dll if exist &quot;C:\Program Files\CodeBlocks\MinGW\bin\libgcc_s_seh-1.dll&quot; copy /y &quot;C:\Program Files\CodeBlocks\MinGW\bin\libgcc_s_seh-1.dll&quot; bin\" />
+			<Add after="cmd /c if not exist bin\libwinpthread-1.dll if exist &quot;C:\Program Files\CodeBlocks\MinGW\bin\libwinpthread-1.dll&quot; copy /y &quot;C:\Program Files\CodeBlocks\MinGW\bin\libwinpthread-1.dll&quot; bin\" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="src/main.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lib/blocks.h" />
+		<Unit filename="lib/effects.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lib/effects.h" />
+		<Unit filename="lib/game.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lib/game.h" />
+		<Unit filename="lib/hud.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lib/hud.h" />
+		<Unit filename="lib/noise.h" />
+		<Unit filename="lib/player.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lib/player.h" />
+		<Unit filename="lib/sky.cpp">
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lib/sky.h" />
+		<Unit filename="lib/textures.cpp" />
+		<Unit filename="lib/textures.h" />
+		<Unit filename="lib/world.cpp" />
+		<Unit filename="lib/world.h" />
+		<Unit filename="tests/world_test.cpp">
+			<Option target="Tests" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
